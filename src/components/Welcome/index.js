@@ -5,22 +5,19 @@ import {Component} from 'react'
 import './index.css'
 
 class Welcome extends Component {
-  state = {status:Subscribe}
+  state = {status:'Subscribe'}
   subscribedStatusBtn=()=>{
       const {status} = this.state
-    if (status===Subscribe) {
+    if (status==='Subscribe') {
       return(
-          this.setState((prevState)=>({prevState.status:Subscribed}))
+          this.setState({status:'Subscribed'}))
       )
       
     }
      return
      (
-          this.setState((prevState)=>({prevState.status:Subscribe}))
+          this.setState({status:'Subscribe'}))
      )
-      
-  
-
       
   }
 

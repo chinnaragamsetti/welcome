@@ -6,7 +6,7 @@ import './index.css'
 class Welcome extends Component {
   state = {isSubscribed: true}
   subscribedStatusBtn = () => {
-    const {isSubscribed} = thsi.state
+    const {isSubscribed} = this.state
     if (isSubscribed === true) {
       return <button className="butt">Subscribe</button>
     }
